@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main{
+    background-color: #f2f2f2;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Lexend Deca","Big Shoulders Display";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.cards-container{
+margin: 16px;
+display: flex;
+border-radius: 10px;
+overflow: hidden;
+max-width: 870px;
+justify-content: center;
+align-items: center;
+}
+
+.card h2 {
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.card{
+    padding:3rem;  
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.card img{
+    height: 40px;
+    width: 64px;
+}
+
+.card p{
+    opacity: 0.65;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+
+.first-card-container{
+    background-color: rgb(227, 136, 38);     
+}
+
+button{
+    border: none;
+    margin-top: 4.5rem;
+    background-color: #f2f2f2;   
+    width: 130px;
+    font-size: 0.8rem;    
+    font-weight: 700;
+    border-radius: 40px;
+    padding: 15px; 
+}
+
+.first-card-container button{
+    color: #b89472;
+}
+
+.second-card-container{
+    background-color:hsl(184, 100%, 22%);  
+}
+
+.second-card-container button{
+    color: hsl(184, 100%, 22%);
+}
+
+.third-card-container{
+    background-color: hsl(179, 100%, 13%);    
+ 
+}
+.third-card-container button{
+    color:  hsl(179, 100%, 13%);
+   
+}
+
+@media (max-width:8500px){
+    .cards-container{
+    flex-direction: column;
+    /* max-width: 450px; */
+}
+.card{
+    padding: 0.8rem;
+    /* width: auto; */
+}
+
+button{
+    margin-top: 3rem;
+}
+}
